@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css'
+import Tutores from './components/Tutores.js'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hola a todos
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         Esto sera un ecommerce (a futuro)
-        </a>
-      </header>
-    </div>
+    <div>
+    <header>
+     <h1> Chloe Tejidos tienda online </h1> 
+    <nav>
+ <a>Link 1</a>
+
+ <a>Link 2</a>
+
+ <a>Link 3</a>
+    </nav>
+      
+     </header>
+      
+     <Tutores/>
+      
+      </div>
   );
 }
 
