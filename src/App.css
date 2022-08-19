@@ -1,38 +1,52 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Outfit:wght@100;300&display=swap');
+ 
+.div {
+  background-image: url(./back3.png);
+}
+.titulo {
+  text-align: center;
+  margin-top: 30px;
+  font-family:  'Amatic SC', cursive;
+  font-size: 80px;
+  color: #F4989C;
+}
+
+.subtitulo {
+  font-family: 'Outfit', sans-serif;
+  color: #9d81c1;
+  margin-top: 30px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  float: left;
 }
 
-.App-header {
-  background-color: #648ee1;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(88, 16, 143);
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
 }
 
-.App-link {
-  color: #074c5f;
+li a:hover:not(.active) {
+  background-color: #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li a.active {
+  color: white;
+  background-color: #9d81c1;
 }
+

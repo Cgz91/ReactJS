@@ -1,23 +1,16 @@
 
 import './App.css'
-import Tutores from './components/Tutores.js'
+import Titulo from './components/Titulo.js'
+import NavBar from './components/Navbar.js'
+
 
 const App = () => {
   return (
-    <div>
-    <header>
-     <h1> Chloe Tejidos tienda online </h1> 
-    <nav>
- <a>Link 1</a>
-
- <a>Link 2</a>
-
- <a>Link 3</a>
-    </nav>
+    <div className='div'>
+    <Titulo/>
+    <NavBar/>
       
-     </header>
-      
-     <Tutores/>
+ 
       
       </div>
   );
