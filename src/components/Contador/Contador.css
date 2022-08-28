@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Outfit:wght@100;300&display=swap');
+
+.contador {
+    font-family: 'Outfit', sans-serif;
+    color: #5d4d71;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.containerContador {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

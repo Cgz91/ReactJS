@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Outfit:wght@100;300&display=swap');
+
+.img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-style: solid ;
+    border-color: rgb(127, 124, 124);
+}
+
+.tituloItem{
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    color: #F4989C;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+      
+}
+
+.subtituloItem {
+    font-family: 'Outfit', sans-serif;
+    color: #5d4d71;
+}
+
+
+.producto {
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: rgb(110, 109, 109);
+    border-radius: 10px;
+    background-color: rgb(213, 233, 233);
+
+}
+
+#botonVerMas {
+margin-left: 35%;
+}

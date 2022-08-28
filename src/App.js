@@ -11,8 +11,8 @@ const App = () => {
     <div className='div'>
     <Titulo/>
     <NavBar/>
-    <ItemListContainer usuario="Lucia"/>
-      
+    <ItemListContainer/>
+ 
       </div>
   );
 }

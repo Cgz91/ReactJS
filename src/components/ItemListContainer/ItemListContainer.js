@@ -1,13 +1,37 @@
+import { useState, useEffect } from 'react'
 import './ItemListContainer.css'
+import {pedirDatos} from "../../helpers/pedirDatos"
+import ItemList from '../ItemList/ItemList'
+
 
 const ItemListContainer = (props ) => {
-    return (
-         <section className='text-container'>
+
+    const [productos, setProductos] = useState([])
+
+    console.log(productos)
+    
+    useEffect(()=> { 
+
+        pedirDatos()
+        .then((res)=> {
+            setProductos(res)
+        })
+        .catch( (error)=> {
+            console.log(error)
+        })
+        .finally( ()=>{
           
-        <h2> Bienvenido {props.usuario}</h2>
-        <p> Al shop de Chloe Tejidos</p>
-        </section>
+        })
+    },  [] )
+
+    return (
+        <div>
+            <ItemList productos={productos}/>
+        </div>
     )
+   
+
+
 }
 
 export default ItemListContainer
