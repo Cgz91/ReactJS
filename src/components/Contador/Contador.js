@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./Contador.css"
 
-const Contador = ({stock}) => {
+const Contador = ({stock, addToCart}) => {
     const [counter, setCounter] = useState(0)
 
  
@@ -24,7 +24,7 @@ const Contador = ({stock}) => {
             <button onClick={restar} className="btn btn-outline-primary">  - </button>
             <span >{counter}</span>
             <button onClick={sumar} className="btn btn-primary">  + </button>
-            <button className="btn btn-primary" disabled={counter<=0} >Agregar al carrito</button>
+            <button className="btn btn-primary" disabled={counter<=0} onClick={()=> addToCart(counter)} >Agregar al carrito</button>
      
         </div>
     )

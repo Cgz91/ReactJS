@@ -2,7 +2,10 @@ import Contador from "../Contador/Contador"
 import './Item.css'
 const Item = ({producto}) => {
 
+const addToCart = (counter) => {
+console.log("se agrego al carrito", counter, producto.nombre)
 
+} 
 
 
     return (
@@ -12,7 +15,7 @@ const Item = ({producto}) => {
                 <p className="subtituloItem">Stock disponible: {producto.stock}</p>
                 <p className="subtituloItem">{producto.desc}</p>
                 <p className="subtituloItem">Precio: ${producto.precio}</p>
-                <Contador  stock={producto.stock} />
+                <Contador  stock={producto.stock} addToCart={addToCart}/>
              
                 </div> 
                ) }
