@@ -5,7 +5,7 @@ export const stock = [
         nombre: 'Manta Vera',
         precio: 1000,
         img: "/assets/img/manta1.jpeg",
-        stock: 10,
+        stock: 6,
         desc: 'Manta celeste de cashmilon semigrueso forrada con corderito'
     
     },

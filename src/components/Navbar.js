@@ -1,4 +1,4 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const NavBar = ( ) => {
@@ -7,7 +7,7 @@ const NavBar = ( ) => {
           
 <ul>
 
-  <li><a class="active" href="#home">Shop</a></li>
+  <li><a className="active" href="#home">Shop</a></li>
   <li><a href="#news">Ropa de Cama</a></li>
   <li><a href="#contact">Indumentaria</a></li>
   <li><a href="#about">Juguetes</a></li>
