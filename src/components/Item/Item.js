@@ -1,13 +1,17 @@
+
+import { useState } from "react"
 import Contador from "../Contador/Contador"
 import './Item.css'
- 
 
 const Item = ({producto}) => {
- 
+const [total, setTotal] = useState(0);
 const addToCart = (counter) => {
-console.log("se agrego al carrito", counter, producto.nombre)
 
+console.log("se agrego al carrito", counter, "unidades de", producto.nombre, "el total es $:", (producto.precio * counter));
+
+setTotal(counter * producto.precio);
 } 
+ 
 
 
     return (
@@ -18,7 +22,7 @@ console.log("se agrego al carrito", counter, producto.nombre)
                 <p className="subtituloItem">{producto.desc}</p>
                 <p className="subtituloItem">Precio: ${producto.precio}</p>
                 <Contador  stock={producto.stock} addToCart={addToCart} />
-                <p> Total : $ {producto.precio    } </p>
+                <p> Total : $ {  total } </p>
                 </div> 
                ) }
 

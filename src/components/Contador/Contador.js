@@ -24,7 +24,7 @@ const Contador = ({stock, addToCart}) => {
             <button onClick={restar} className="btn btn-outline-primary">  - </button>
             <span >{counter}</span>
             <button onClick={sumar} className="btn btn-primary">  + </button>
-            <button className="btn btn-primary" disabled={counter<=0} onClick={()=> addToCart(counter)} >Agregar al carrito</button>
+            <button className="btn btn-primary" disabled={counter<=0} onClick={()=> addToCart()} >Agregar al carrito</button>
      
         </div>
     )
