@@ -8,8 +8,7 @@ const [total, setTotal] = useState(0);
 const addToCart = (counter) => {
 
 console.log("se agrego al carrito", counter, "unidades de", producto.nombre, "el total es $:", (producto.precio * counter));
-
-setTotal(counter * producto.precio);
+setTotal(producto.precio * counter);
 } 
  
 
