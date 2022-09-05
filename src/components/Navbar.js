@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {Link} from 'react-router-dom'
 
 const NavBar = ( ) => {
     return (
@@ -7,10 +7,11 @@ const NavBar = ( ) => {
           
 <ul>
 
-  <li><a className="active" href="#home">Shop</a></li>
-  <li><a href="#news">Ropa de Cama</a></li>
-  <li><a href="#contact">Indumentaria</a></li>
-  <li><a href="#about">Juguetes</a></li>
+  <li><Link to='/'>Shop</Link></li>
+  <li><Link to="/productos/mantas">Mantas</Link></li>
+  <li><Link to="/productos/juguetes">Juguetes</Link></li>
+  <li><Link to="/productos/indumentaria">Indumentaria</Link></li>
+   
 
 </ul>
 

@@ -4,12 +4,15 @@
     font-family: 'Outfit', sans-serif;
     color: #5d4d71;
     font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 10px;
+   
+    
 }
 
 .containerContador {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
