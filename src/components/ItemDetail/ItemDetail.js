@@ -2,7 +2,7 @@ import './ItemDetail.css'
 import {Link} from 'react-router-dom'
 import Contador from '../Contador/Contador'
 
-const ItemDetail = ({item}) => {
+const ItemDetail = ({item }) => {
 
     return (
         <div>
