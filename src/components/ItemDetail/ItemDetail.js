@@ -1,5 +1,6 @@
 import './ItemDetail.css'
 import {Link} from 'react-router-dom'
+import Contador from '../Contador/Contador'
 
 const ItemDetail = ({item}) => {
 
@@ -11,6 +12,8 @@ const ItemDetail = ({item}) => {
             <p className="subtituloDetail">{item.desc}</p>
             <h4 className="subtituloDetail"> Precio ${item.precio}</h4>
             <p className="subtituloDetail">Stock disponible: {item.stock } unidades </p>
+            
+            <Contador stock={item.stock}  />
             <Link to='/itemListContainer' className="btn btn-primary my-2" id='botonVolver'>Volver</Link>
         </div>
     )

@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./Contador.css"
 
 const Contador = ({stock, addToCart}) => {
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(1)
 
  
 
@@ -13,7 +13,7 @@ const Contador = ({stock, addToCart}) => {
     }
 
     const restar = () => {
-        if (counter > 0) {
+        if (counter > 1) {
             setCounter(counter - 1)
         }
     }
