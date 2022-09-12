@@ -10,9 +10,12 @@
 }
 
 .containerContador {
+    max-width: 300px;
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-bottom: 10px;
     margin-top: 20px;
+    margin-left: 40%;
 }

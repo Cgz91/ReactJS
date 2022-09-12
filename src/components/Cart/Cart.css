@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Outfit:wght@100;300&display=swap');
+
+#botonVaciar {
+    width: 150px;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 45%;
+}
+
+#botonEliminar {
+margin-left: 80px;
+margin-top: 50px;
+}
+
+.containerCarrito {
+    margin-left: 40px;
+    max-width: 1200px;
+    margin-top: 20px;
+    
+
+
+}
+
+.productoCarrito {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    
+}
+
+.tituloCarrito {
+    font-family: 'Outfit', sans-serif;
+    color: #F4989C;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.tituloProducto {
+    
+        font-family: 'Outfit', sans-serif;
+        color: #F4989C;
+        font-weight: bold;
+        font-size: 30px;
+    
+}
+ 
+.subtituloCarrito {
+    font-family: 'Outfit', sans-serif;
+    color: #5d4d71;
+    font-size: 20px;
+    margin-left: 35px;
+     
+}
+
+.TotalCarrito {
+    font-family: 'Outfit', sans-serif;
+    color: #5d4d71;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-style: solid ;
+    border-color: rgb(127, 124, 124);
+}

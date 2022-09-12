@@ -23,7 +23,7 @@ const ItemListContainer = ( ) => {
             if (!categoryId){
             setProductos(res)
         } else {
-            setProductos ( res.filter ((prod)=> prod.category === categoryId) )
+            setProductos ( res.filter ((prod)=>prod.category.toLowerCase() === categoryId.toLowerCase()) )
         }
         })
         .catch( (error)=> {

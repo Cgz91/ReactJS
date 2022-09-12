@@ -1,10 +1,13 @@
 import './ItemDetail.css'
 import {Link} from 'react-router-dom'
 import Contador from '../Contador/Contador'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { CartContext } from '../../Context/CartContext'
 
 const ItemDetail = ({item }) => {
 
+    const {cart, addToCart, isInCart} = useContext(CartContext)
+    console.log(cart)
     const [cantidad, setCantidad] = useState(1)
 
     
@@ -15,7 +18,9 @@ const ItemDetail = ({item }) => {
             precio: item.precio,
             cantidad
         }
-        console.log( itemToCart)
+       
+       console.log( isInCart(item.id))
+        addToCart( itemToCart)
     }
 
     return (
@@ -27,12 +32,21 @@ const ItemDetail = ({item }) => {
             <h4 className="subtituloDetail"> Precio ${item.precio}</h4>
             <p className="subtituloDetail">Stock disponible: {item.stock } unidades </p>
 
-            <Contador 
-            stock={item.stock} 
-            counter ={cantidad} 
-            setCounter={setCantidad}
-            handleAgregar ={handleAgregar} />
-
+            {
+                isInCart(item.id)
+                ?
+                <Link to="/cart" className='btn btn-success' id='botonTerminar'> Terminar mi compra</Link>
+                : 
+                <Contador 
+                stock={item.stock} 
+                counter ={cantidad} 
+                setCounter={setCantidad}
+                handleAgregar ={handleAgregar} />
+                
+            }
+           
+            
+            
             <Link to='/itemListContainer' className="btn btn-primary my-2" id='botonVolver'>Volver</Link>
         </div>
     )

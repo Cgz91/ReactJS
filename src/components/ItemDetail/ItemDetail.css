@@ -30,5 +30,11 @@
 #botonVolver {
     margin-left: 48%;
     font-size: 20px;
+    margin-top: 40px;
      
+}
+
+#botonTerminar {
+    max-width: 300px;
+    margin-left: 45%;
 }

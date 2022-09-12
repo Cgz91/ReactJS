@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Outfit:wght@100;300&display=swap');
+
 .CartWidget {
     text-align: right;
     font-size:50px;
     margin-right: 60px;
+     
+   
   }
 
- 
+  .Widget {
+    text-decoration: none;
+    color: #9d81c1;
+    font-family: 'Outfit', sans-serif;
+    
+  }
+  
