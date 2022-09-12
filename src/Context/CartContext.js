@@ -1,7 +1,7 @@
 import { createContext, useEffect } from "react"
 import { useState } from "react"
 import Swal from "sweetalert2"
-import Toastify from 'toastify-js'
+
 
 export const CartContext  = createContext ()
 
@@ -14,6 +14,7 @@ export const CartProvider = ({children})=> {
   const addToCart = (item) => {
     
     setCart([...cart, item])
+    
      
      
   }
