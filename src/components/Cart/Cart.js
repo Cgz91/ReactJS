@@ -22,7 +22,7 @@ const Cart = () => {
                     <p className="subtituloCarrito">Precio: $ {item.precio}</p>
                     <p className="subtituloCarrito">Cantidad: {item.cantidad}</p>
                    
-                    {/* <img className="img" src={item.img} />  */}
+                    <img className="img" src={`./${item.img}`} /> 
                     
                     </div>
                     
