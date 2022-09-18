@@ -1,4 +1,10 @@
 
+.ItemDetail { 
+    max-width: 80%;
+    margin-left: 10%;
+    
+}
+
 .imgDetail {
     width: 50%;
     margin-bottom: 10px;

@@ -24,9 +24,16 @@ const Contador = ({stock, counter, setCounter, handleAgregar}) => {
     return (
         <div className="containerContador">
             
-            <button onClick={restar} className="btn btn-outline-primary">  - </button>
-            <span  >{counter}</span>
-            <button onClick={sumar} className="btn btn-primary">  + </button>
+            <button onClick={restar} 
+            className={`btn ${counter === 1 ? "btn-outline-danger" : "btn-outline-primary"}`}
+            disabled={counter===1} > - </button>
+           
+            <span>{counter}</span>
+            
+            <button onClick={sumar} 
+            className={`btn ${counter === stock ? "btn-outline-danger" : "btn-primary"}`}
+            disabled={counter === stock}
+            > + </button>
            
             <button onClick={handleAgregar} className="btn btn-success" disabled={counter<=0} >Agregar al carrito</button>
      

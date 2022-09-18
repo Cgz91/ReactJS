@@ -1,16 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Outfit:wght@100;300&display=swap');
 
-#botonVaciar {
+#botonVaciar  {
     width: 150px;
-    height: 50px;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+#botonIrAComprar {
+    width: 150px;
+    height: 45px;
     margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 45%;
 }
 
-#botonEliminar {
-margin-left: 80px;
-margin-top: 50px;
+#botonTerminar {
+    width: 200px;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+#botonEliminar{
+margin-left: 40px;
+margin-top: 25px;
+height: 40px;
 }
 
 .containerCarrito {
@@ -18,8 +39,6 @@ margin-top: 50px;
     max-width: 1200px;
     margin-top: 20px;
     
-
-
 }
 
 .productoCarrito {
@@ -39,10 +58,10 @@ margin-top: 50px;
 
 .tituloProducto {
     
-        font-family: 'Outfit', sans-serif;
-        color: #F4989C;
-        font-weight: bold;
-        font-size: 30px;
+    font-family: 'Outfit', sans-serif;
+    color: #F4989C;
+    font-weight: bold;
+    font-size: 30px;
     
 }
  
@@ -63,10 +82,11 @@ margin-top: 50px;
     margin-top: 30px;
 }
 
-.img {
-    width: 100%;
+.imgCarrito {
+    width: 10%;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border-style: solid ;
     border-color: rgb(127, 124, 124);
+    margin-left: 40px;
 }

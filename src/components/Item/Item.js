@@ -8,14 +8,23 @@ const Item = ({producto}) => {
 
     return (
     <div className="producto"> 
-                <img className="img" src={producto.img}/>
+        {
+        producto.stock > 0
+        ?  <img className="img" src={producto.img}/>   
+        : <img className="imgSinStock" src={producto.img}/> 
+        }
                 <h4 className="tituloItem">{producto.nombre}</h4>   
                 <p className="subtituloItem">Precio: ${producto.precio}</p>
-                <Link to={`/item/${producto.id}`} className="btn btn-primary my-2" id="botonVerMas" >Ver mas</Link>
-                {/* <Contador  stock={producto.stock} />
-                <p className="subtituloItem"> Total : $ </p> */}
+        {
+            producto.stock > 0
+            ?   <Link to={`/item/${producto.id}`} className="btn btn-primary my-2" id="botonVerMas" >Ver mas</Link>
+            : <p className="btn btn-outline-danger" id="botonSinStock"> Producto sin stock </p>
+        }
+               
                 </div> 
                ) }
-
+ 
 
 export default Item
+
+

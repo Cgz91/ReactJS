@@ -13,7 +13,7 @@ export const stock = [
         nombre: 'Saco de Dormir',
         precio: 3200,
         img: '/assets/img/sacodedormir2.jpeg',
-        stock: 4,
+        stock: 0,
         desc: 'Manta de cashmilon semigrueso con boton para tranformarlo en sobre.',
         category: "Mantas"
     

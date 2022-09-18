@@ -25,7 +25,7 @@ const ItemDetail = ({item }) => {
     }
 
     return (
-        <div>
+        <div className='ItemDetail'>
 
             <h3 className="tituloDetail">{item.nombre}</h3>
             <img  className="imgDetail" src={item.img} />

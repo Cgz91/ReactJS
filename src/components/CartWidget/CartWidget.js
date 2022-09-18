@@ -6,12 +6,12 @@ import './CartWidget.css'
 
 const CartWidget = ( ) => {
 
-const {cartQuantity} = useContext(CartContext)
+const {cartQuantity, cart} = useContext(CartContext)
 
 
     return (
         <section className='CartWidget'>
-    <Link to="/Cart" className='Widget' >
+    <Link to="/Cart" className={`Widget ${cart.length > 0 ? 'Widget' : 'Widget-Empty'}`} >
         <BsFillCartFill />
         <span > {cartQuantity()} </span>
     </Link>

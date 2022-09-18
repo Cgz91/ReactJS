@@ -3,9 +3,20 @@
 .img {
     width: 100%;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border-style: solid ;
     border-color: rgb(127, 124, 124);
+}
+
+.imgSinStock {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: solid ;
+    border-color: rgb(127, 124, 124);
+   
+    opacity: 30%; 
+     
 }
 
 .tituloItem{
@@ -43,4 +54,8 @@
 #botonVerMas{
     margin-left: 40%;
     
+}
+
+#botonSinStock{
+    margin-left: 28%;
 }
