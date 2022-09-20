@@ -29,7 +29,7 @@ const Cart = () => {
                 
                     <p className="subtituloCarrito">Precio: $ {item.precio}</p>
                     <p className="subtituloCarrito">Cantidad: {item.cantidad}</p>
-                    <img className="imgCarrito" src={`./${item.img}`} /> 
+                    <img className="imgCarrito" src={item.img} /> 
                     
                     <button onClick={()=> removeItem(item.id)}  className="btn btn-danger" id="botonEliminar" > <BsFillTrashFill/> </button>
                     
