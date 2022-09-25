@@ -2,6 +2,7 @@
 import './App.css'
 import Titulo from './components/Titulo.js'
 import NavBar from './components/Navbar.js'
+import Checkout  from './components/Checkout/Checkout';
 import ItemListContainer  from './components/ItemListContainer/ItemListContainer.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route , Navigate} from "react-router-dom";
@@ -29,6 +30,7 @@ const App = () => {
       <Route path="/item/:itemId" element={<ItemDetailContainer/>} />  
       <Route path= "/cart" element= { <Cart/> } />
       <Route path="*" element={<Navigate to="/"  />}/>
+      <Route path='/checkout' element={<Checkout/>} /> 
     </Routes>
 
     

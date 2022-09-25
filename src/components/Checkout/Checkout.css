@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Outfit:wght@100;300&display=swap');
+
+
+.containerCheckout {
+    max-width: 50%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.tituloCheckout {
+    
+        font-family: 'Outfit', sans-serif;
+        color: #F4989C;
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 5%;   
+}
+
+#botonEnviarC {
+     
+        width: 100px;
+        height: 45px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      
+     
+}

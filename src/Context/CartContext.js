@@ -1,4 +1,4 @@
-import { createContext, useEffect } from "react"
+import { createContext, useEffect, useContext } from "react"
 import { useState } from "react"
 import Swal from "sweetalert2"
 
@@ -76,6 +76,20 @@ const emptyCart = ()=> {
    
 }
 
+const terminarCompra = (id) => { 
+  Swal.fire({
+    title: 'Tu compra se registro con exito',
+    text: `Tu numero de orden es: ${id}`,
+    icon: 'success',
+   
+    confirmButtonColor: '#3085d6',
+    confirmButtonText: 'Genial!',
+  
+  }) 
+  setCart([])
+
+}
+
 useEffect( ()=> {
   localStorage.setItem('carrito', JSON.stringify(cart))
 },[cart])
@@ -90,7 +104,7 @@ useEffect( ()=> {
     cartTotal,
     emptyCart,
     removeItem,
-   
+    terminarCompra
   } }>
 
     {children}
@@ -98,3 +112,8 @@ useEffect( ()=> {
 </CartContext.Provider>
     )
 }
+
+export const useCartContext = () => {
+  return useContext(CartContext)
+}
+ 
